@@ -1,0 +1,52 @@
+#Lovely Loveseats for neat Suites on Fleet street
+
+#first item and price
+lovely_loveseat_description= "Lovely Loveseat.Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep.Red or white."
+
+lovely_loveseat_price= 254.00
+
+#second item and price
+
+stylish_settee_description="Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black."
+
+stylish_settee_price=180.50
+
+
+#third item and price
+
+luxurious_lamp_description="Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade."
+
+luxurious_lamp_price= 52.15
+
+
+#calculate tax
+
+sales_tax= .088
+
+#first customer in, starting basket
+
+customer_one_total=0
+
+# empty list of what customer is purchasing
+customer_one_itemization= "   "
+
+customer_one_total += float( lovely_loveseat_price)
+
+customer_one_itemization+=stylish_settee_description
+
+customer_one_total += float( luxurious_lamp_price)
+
+customer_one_itemization+=luxurious_lamp_description
+ 
+ #calculating the tax after the purchase
+customer_one_tax=float(customer_one_total) * float(sales_tax)
+
+# list of customer's purchase and total receipt
+
+
+
+print("Customer one items: ")
+print(customer_one_itemization)
+print("customer one total: ")
+print(customer_one_total)
+
